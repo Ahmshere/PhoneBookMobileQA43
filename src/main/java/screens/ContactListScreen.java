@@ -12,7 +12,9 @@ public class ContactListScreen extends BaseScreen{
     MobileElement noContactsText;
     @FindBy(id = "com.sheygam.contactapp:id/add_contact_btn")
     MobileElement addContactButton;
+    @FindBy(xpath = "//*[@resource-id='com.sheygam.contactapp:id/action_bar']/android.widget.TextView")
+    MobileElement title;
     public boolean isContactListPresent(){
-        return isElementPresent(noContactsText, "No Contacts. Add One more!");
+        return isElementPresent(title, "Contact list");
     }
 }

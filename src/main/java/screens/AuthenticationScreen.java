@@ -70,11 +70,18 @@ public class AuthenticationScreen extends BaseScreen {
         }else {
             return new RegistrationResult(true, null, new ContactListScreen(driver));
         }
+    }
 
+    public <T extends BaseScreen> T clickByLoginButton() {
+        loginButton.click();
+        List<MobileElement> list = driver.findElements(By.id("android:id/alertTitle"));
+        if (list.size()>0){
+            return (T)new AuthenticationScreen(driver);
+        }else {
+            return (T)new ContactListScreen(driver);
+        }
 
 
 
     }
-
-
 }

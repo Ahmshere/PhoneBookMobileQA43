@@ -1,12 +1,16 @@
 import config.AppiumConfig;
 import helpers.EmailGenerator;
 import helpers.PasswordStringGenerator;
+import io.appium.java_client.appmanagement.ApplicationState;
 import models.RegistrationResult;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import screenactions.ScreenUtil;
 import screens.AuthenticationScreen;
 import screens.ContactListScreen;
 import screens.SplashScreen;
+
+import javax.sound.midi.Soundbank;
 
 public class RegistrationTests extends AppiumConfig {
 
@@ -32,17 +36,37 @@ public class RegistrationTests extends AppiumConfig {
     }
 
     @Test
-    public void regWithoutPassword(){
+    public void regWithoutPassword() {
         AuthenticationScreen authenticationScreen = new AuthenticationScreen(driver);
-        RegistrationResult result = authenticationScreen.fillEmailField(EmailGenerator.generateEmail(EmailGenerator.EmailType.VALID, 3,7,3))
+        RegistrationResult result = authenticationScreen.fillEmailField(EmailGenerator.generateEmail(EmailGenerator.EmailType.VALID, 3, 7, 3))
                 .fillPasswordField("123")
                 .clickByRegistrationButtonUsingRegistrationResult();
-        if (!result.isSuccess()){
+        if (!result.isSuccess()) {
             result.getErrorMessage().contains("least 8");
-        }else {ContactListScreen contactListScreen = result.getContactListScreen();}
+        } else {
+            ContactListScreen contactListScreen = result.getContactListScreen();
+        }
     }
 
+    @Test
+    public void regWithoutPasswordUsingApplicationState() {
+        AuthenticationScreen authenticationScreen = new AuthenticationScreen(driver);
+        ApplicationState appState = driver.queryAppState("com.sheygam.contactapp");
+        System.out.println("APP STATE: " + appState.toString());
+        RegistrationResult result = authenticationScreen.fillEmailField(EmailGenerator.generateEmail(EmailGenerator.EmailType.VALID, 3, 7, 3))
+                .fillPasswordField("")
+                .clickByRegistrationButtonUsingRegistrationResult();
+        System.out.println("RESULT MESSAGE: " + result.getErrorMessage());
 
+        ScreenUtil screenUtil = new ScreenUtil(driver);
+        screenUtil.takeScreenShot("RegistrationIssue");
 
+        if (appState == ApplicationState.RUNNING_IN_FOREGROUND) {
+            System.out.println("Running..");
+        } else {
+            System.out.println("Not....");
+        }
+        Assert.assertTrue(result.getErrorMessage().contains("Contact App has stopped"));
+    }
 
 }

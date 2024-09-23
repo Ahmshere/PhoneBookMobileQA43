@@ -5,17 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a1aa91f-5e50-4976-8724-9a43f4df11ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/helpers/AddressGEnerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/helpers/EmailGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/helpers/NameAndLastNameGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/helpers/PasswordStringGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/helpers/PhoneNumberGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/RegistrationResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RegistrationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/RegistrationIssue_23092024_193041.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/helpers/PropertiesReaderXML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/helpers/PropertiesWriterXML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/interfaces/TestHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screenactions/ScreenUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LoginTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/AppiumConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/AppiumConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/screens/AuthenticationScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/AuthenticationScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegistrationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +26,16 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -48,6 +58,9 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Gradle.LoginTests.loginPositive.executor": "Run",
+    "Gradle.RegistrationTests.regWithoutPassword.executor": "Run",
+    "Gradle.RegistrationTests.regWithoutPasswordUsingApplicationState.executor": "Run",
     "Gradle.RegistrationTests.registrationPositiveTest.executor": "Run",
     "Gradle.RegistrationTests.wrongEmailRegistration.executor": "Run",
     "Gradle.SplashCreenTest.firstLaunch.executor": "Run",
@@ -55,7 +68,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/PROJECTS/PhoneBookMobileQA43/src/main/java/helpers",
+    "last_opened_file_path": "C:/PROJECTS/PhoneBookMobileQA43/src/main/java",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0"
@@ -63,10 +76,36 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\PROJECTS\PhoneBookMobileQA43\src\main\java" />
+      <recent name="C:\PROJECTS\PhoneBookMobileQA43\src\main\resources" />
       <recent name="C:\PROJECTS\PhoneBookMobileQA43\src\main\java\helpers" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.RegistrationTests.regWithoutPassword">
+  <component name="RunManager" selected="Gradle.LoginTests.loginPositive">
+    <configuration name="LoginTests.loginPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;LoginTests.loginPositive&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="RegistrationTests.regWithoutPassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -81,6 +120,30 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;RegistrationTests.regWithoutPassword&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="RegistrationTests.regWithoutPasswordUsingApplicationState" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;RegistrationTests.regWithoutPasswordUsingApplicationState&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -139,36 +202,13 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SplashCreenTest.firstLaunch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;SplashCreenTest.firstLaunch&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LoginTests.loginPositive" />
+        <item itemvalue="Gradle.RegistrationTests.regWithoutPasswordUsingApplicationState" />
         <item itemvalue="Gradle.RegistrationTests.regWithoutPassword" />
         <item itemvalue="Gradle.RegistrationTests.wrongEmailRegistration" />
         <item itemvalue="Gradle.RegistrationTests.registrationPositiveTest" />
-        <item itemvalue="Gradle.SplashCreenTest.firstLaunch" />
       </list>
     </recent_temporary>
   </component>
