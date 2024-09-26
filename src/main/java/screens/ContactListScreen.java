@@ -17,4 +17,5 @@ public class ContactListScreen extends BaseScreen{
     public boolean isContactListPresent(){
         return isElementPresent(title, "Contact list");
     }
+    public
 }

@@ -22,6 +22,10 @@ public class AuthenticationScreen extends BaseScreen {
     @FindBy(id = "android:id/message")
     MobileElement alertMessage;
 
+    public MobileElement getAlertMessage() {
+        return alertMessage;
+    }
+
     private String errorMsg;
 
     public String getErrorMsg() {
@@ -71,6 +75,28 @@ public class AuthenticationScreen extends BaseScreen {
             return new RegistrationResult(true, null, new ContactListScreen(driver));
         }
     }
+
+    public RegistrationResult clickLoginButtonUsingRegistrationResult(){
+        return clickLoginButtonUsingRegistrationResult(loginButton);
+    }
+    public RegistrationResult clickRegistrationButtonUsingRegistrationResult(){
+        return clickLoginButtonUsingRegistrationResult(registrationButton);
+    }
+    public RegistrationResult clickLoginButtonUsingRegistrationResult(MobileElement button) {
+        button.click();
+        String msg = null;
+        List<MobileElement> errorList = driver.findElements(By.id("android:id/alertTitle"));
+        if(errorList.size()>0){
+            List<MobileElement> errorMessage = driver.findElements(By.id("android:id/message"));
+            if(errorMessage.size()>0){
+                msg = errorMessage.get(0).getText();
+            }else {msg=errorList.get(0).getText();}
+            return new RegistrationResult(false, msg, null);
+        }else {
+            return new RegistrationResult(true, null, new ContactListScreen(driver));
+        }
+    }
+
 
     public <T extends BaseScreen> T clickByLoginButton() {
         loginButton.click();
