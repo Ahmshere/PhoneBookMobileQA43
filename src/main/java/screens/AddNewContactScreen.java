@@ -47,6 +47,12 @@ public class AddNewContactScreen extends BaseScreen {
         return new AddNewContactScreen(driver);
 
     }
+    public MobileElement getCreateButton(){
+        return createButton;
+    }
+    public RegistrationResult clickByCreate(){
+       return createContactUsingRegistrationResult(getCreateButton());
+    }
 
     public <T extends BaseScreen> T createContact() {
         createButton.click();
@@ -58,20 +64,7 @@ public class AddNewContactScreen extends BaseScreen {
         }
     }
 
-    public RegistrationResult createContactUsingRegistrationResult() {
-        createButton.click();
-        String msg = null;
-        List<MobileElement> errorList = driver.findElements(By.id("android:id/alertTitle"));
-        if(errorList.size()>0){
-            List<MobileElement> errorMessage = driver.findElements(By.id("android:id/message"));
-            if(errorMessage.size()>0){
-                msg = errorMessage.get(0).getText();
-            }else {msg=errorList.get(0).getText();}
-            return new RegistrationResult(false, msg, null);
-        }else {
-            return new RegistrationResult(true, null, new ContactListScreen(driver));
-        }
-    }
+
 
     public boolean isTheErrorPresent(String text) {
         waitForAnElement(errorAlert);

@@ -5,18 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a1aa91f-5e50-4976-8724-9a43f4df11ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/EditContactTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SplashScreenTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screens/EditContactScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/AppiumConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/AppiumConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/screens/AddNewContactScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/AddNewContactScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/screens/AuthenticationScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/AuthenticationScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/screens/BaseScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/BaseScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/SplashScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/SplashScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/AddNewContactsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddNewContactsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EditContactTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EditContactTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegistrationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SplashCreenTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +57,10 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Gradle.AddNewContactsTest.addNewContactApproach2.executor": "Run",
     "Gradle.AddNewContactsTest.addNewContactNegative.executor": "Run",
     "Gradle.AddNewContactsTest.addNewContactPositive.executor": "Run",
+    "Gradle.EditContactTests.editContactTestPositive.executor": "Run",
     "Gradle.LoginTests.loginNegativeRegistrationResult.executor": "Run",
     "Gradle.LoginTests.loginNegative_001.executor": "Run",
     "Gradle.LoginTests.loginPositive.executor": "Run",
@@ -93,19 +92,30 @@
       <recent name="models" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.RegistrationTests.regWithoutPassword">
-    <configuration name="ContactGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="helpers.ContactGenerator" />
-      <module name="PhoneBookMobileQA43.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="helpers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="Gradle.EditContactTests.editContactTestPositive">
+    <configuration name="AddNewContactsTest.addNewContactApproach2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;AddNewContactsTest.addNewContactApproach2&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration name="AddNewContactsTest.addNewContactNegative" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -131,7 +141,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="AddNewContactsTest.addNewContactPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EditContactTests.editContactTestPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -144,7 +154,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;AddNewContactsTest.addNewContactPositive&quot;" />
+            <option value="&quot;EditContactTests.editContactTestPositive&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -205,11 +215,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.EditContactTests.editContactTestPositive" />
+        <item itemvalue="Gradle.AddNewContactsTest.addNewContactApproach2" />
         <item itemvalue="Gradle.RegistrationTests.regWithoutPassword" />
         <item itemvalue="Gradle.SplashCreenTest.splashScreenTime" />
         <item itemvalue="Gradle.AddNewContactsTest.addNewContactNegative" />
-        <item itemvalue="Gradle.AddNewContactsTest.addNewContactPositive" />
-        <item itemvalue="Application.ContactGenerator" />
       </list>
     </recent_temporary>
   </component>

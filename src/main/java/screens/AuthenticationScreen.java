@@ -21,7 +21,14 @@ public class AuthenticationScreen extends BaseScreen {
     MobileElement loginButton;
     @FindBy(id = "android:id/message")
     MobileElement alertMessage;
-
+//******************
+public MobileElement getLoginButton(){
+    return loginButton;
+}
+    public RegistrationResult clickByLogin(){
+        return createContactUsingRegistrationResult(getLoginButton());
+    }
+    //*****************
     public MobileElement getAlertMessage() {
         return alertMessage;
     }

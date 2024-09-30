@@ -32,6 +32,19 @@ public class BaseScreen {
         return true;
     }catch (TimeoutException timeoutException){return false;}
     }
-
+    public RegistrationResult createContactUsingRegistrationResult(MobileElement button) {
+        button.click();
+        String msg = null;
+        List<MobileElement> errorList = driver.findElements(By.id("android:id/alertTitle"));
+        if(errorList.size()>0){
+            List<MobileElement> errorMessage = driver.findElements(By.id("android:id/message"));
+            if(errorMessage.size()>0){
+                msg = errorMessage.get(0).getText();
+            }else {msg=errorList.get(0).getText();}
+            return new RegistrationResult(false, msg, null);
+        }else {
+            return new RegistrationResult(true, null, new ContactListScreen(driver));
+        }
+    }
 
 }

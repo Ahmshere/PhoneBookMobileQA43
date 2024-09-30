@@ -20,6 +20,7 @@ public class EditContactTests extends AppiumConfig implements TestHelper {
                 .openNewForm()
                 .fillNewContactForm(contact)
                 .createContact();
+        contactListScreen.editMyContact(0);
 
 
     }

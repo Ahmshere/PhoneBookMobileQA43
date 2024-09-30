@@ -35,7 +35,7 @@ public class RegistrationTests extends AppiumConfig {
         }
     }
 
-    @Test
+  /*  @Test
     public void regWithoutPassword() {
         AuthenticationScreen authenticationScreen = new AuthenticationScreen(driver);
         RegistrationResult result = authenticationScreen.fillEmailField(EmailGenerator.generateEmail(EmailGenerator.EmailType.VALID, 3, 7, 3))
@@ -48,7 +48,7 @@ public class RegistrationTests extends AppiumConfig {
             ContactListScreen contactListScreen = result.getContactListScreen();
         }
     }
-
+*/
     @Test
     public void regWithoutPasswordUsingApplicationState() {
         AuthenticationScreen authenticationScreen = new AuthenticationScreen(driver);

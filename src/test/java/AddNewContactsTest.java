@@ -42,7 +42,7 @@ public class AddNewContactsTest extends AppiumConfig {
     }
 
     @Test
-    public void addNewContactApproach2() {
+    public void addNewContactApproach2() throws InterruptedException {
         Contact contact = ContactGenerator.createValidContact();
         new SplashScreen(driver).switchToAuthenticationScreen()
                 .fillEmailField("mymegamail@mail.com")
@@ -51,7 +51,10 @@ public class AddNewContactsTest extends AppiumConfig {
         RegistrationResult result = new ContactListScreen(driver)
                 .openNewForm()
                 .fillNewContactForm(contact)
-
+                .clickByCreate();
+        ContactListScreen contactListScreen = result.getContactListScreen();
+        contactListScreen.clickOnContact(contact.getName(), contact.getPhone());
+        Thread.sleep(3000);
 
     }
 
