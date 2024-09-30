@@ -40,7 +40,8 @@ public class RegistrationTests extends AppiumConfig {
         AuthenticationScreen authenticationScreen = new AuthenticationScreen(driver);
         RegistrationResult result = authenticationScreen.fillEmailField(EmailGenerator.generateEmail(EmailGenerator.EmailType.VALID, 3, 7, 3))
                 .fillPasswordField("123")
-                .clickByRegistrationButtonUsingRegistrationResult();
+                .clickTestBaseScreen();
+                //.clickByRegistrationButtonUsingRegistrationResult();
         if (!result.isSuccess()) {
             result.getErrorMessage().contains("least 8");
         } else {

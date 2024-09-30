@@ -60,6 +60,7 @@ public class AuthenticationScreen extends BaseScreen {
         }
         return (T) new ContactListScreen(driver);
     }
+//*************
 
     public RegistrationResult clickByRegistrationButtonUsingRegistrationResult() {
         registrationButton.click();

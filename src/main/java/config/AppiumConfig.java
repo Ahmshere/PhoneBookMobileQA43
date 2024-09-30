@@ -31,6 +31,7 @@ public class AppiumConfig {
         driver = new AppiumDriver<MobileElement>(new URL("http://localhost:4723/wd/hub"), capabilities);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
+
     }
     @AfterMethod
     public void tearDown(){
