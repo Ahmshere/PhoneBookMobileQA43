@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a1aa91f-5e50-4976-8724-9a43f4df11ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/screens/EditContactScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/enums/Directions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/CatFeeder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/CatFeedingException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screens/ViewContactScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/AddNewContactScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/AddNewContactScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/AuthenticationScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/AuthenticationScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/BaseScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/BaseScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/AppiumConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/AppiumConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screens/EditContactScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/EditContactScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/AddNewContactsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddNewContactsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/EditContactTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EditContactTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegistrationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -57,14 +58,20 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Gradle.AddNewContactsTest.addMultipleContacts.executor": "Run",
     "Gradle.AddNewContactsTest.addNewContactApproach2.executor": "Run",
     "Gradle.AddNewContactsTest.addNewContactNegative.executor": "Run",
     "Gradle.AddNewContactsTest.addNewContactPositive.executor": "Run",
+    "Gradle.Build PhoneBookMobileQA43.executor": "Run",
+    "Gradle.EditContactTests.addContactAndChechTheList.executor": "Run",
+    "Gradle.EditContactTests.addContactAndCheckTheList.executor": "Run",
     "Gradle.EditContactTests.editContactTestPositive.executor": "Run",
+    "Gradle.EditContactTests.editOrRemoveContact.executor": "Run",
     "Gradle.LoginTests.loginNegativeRegistrationResult.executor": "Run",
     "Gradle.LoginTests.loginNegative_001.executor": "Run",
     "Gradle.LoginTests.loginPositive.executor": "Run",
     "Gradle.LoginTests.loginnegative.executor": "Run",
+    "Gradle.PhoneBookMobileQA43 [:CatFeeder.main()].executor": "Run",
     "Gradle.PhoneBookMobileQA43 [:ContactGenerator.main()].executor": "Run",
     "Gradle.RegistrationTests.regWithoutPassword.executor": "Run",
     "Gradle.RegistrationTests.regWithoutPasswordUsingApplicationState.executor": "Run",
@@ -75,6 +82,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.CatFeeder.testFeeding.executor": "Run",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/PROJECTS/PhoneBookMobileQA43/src/main/java",
     "project.structure.last.edited": "Project",
@@ -92,8 +100,8 @@
       <recent name="models" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.EditContactTests.editContactTestPositive">
-    <configuration name="AddNewContactsTest.addNewContactApproach2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.AddNewContactsTest.addNewContactPositive">
+    <configuration name="AddNewContactsTest.addMultipleContacts" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -106,7 +114,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;AddNewContactsTest.addNewContactApproach2&quot;" />
+            <option value="&quot;AddNewContactsTest.addMultipleContacts&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -117,7 +125,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="AddNewContactsTest.addNewContactNegative" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AddNewContactsTest.addNewContactPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -130,7 +138,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;AddNewContactsTest.addNewContactNegative&quot;" />
+            <option value="&quot;AddNewContactsTest.addNewContactPositive&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -141,7 +149,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="EditContactTests.editContactTestPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EditContactTests.addContactAndChechTheList" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -154,7 +162,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;EditContactTests.editContactTestPositive&quot;" />
+            <option value="&quot;EditContactTests.addContactAndChechTheList&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -165,7 +173,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="RegistrationTests.regWithoutPassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EditContactTests.addContactAndCheckTheList" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -178,7 +186,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;RegistrationTests.regWithoutPassword&quot;" />
+            <option value="&quot;EditContactTests.addContactAndCheckTheList&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -189,7 +197,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SplashCreenTest.splashScreenTime" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EditContactTests.editOrRemoveContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -202,7 +210,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;SplashCreenTest.splashScreenTime&quot;" />
+            <option value="&quot;EditContactTests.editOrRemoveContact&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -215,11 +223,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.EditContactTests.editContactTestPositive" />
-        <item itemvalue="Gradle.AddNewContactsTest.addNewContactApproach2" />
-        <item itemvalue="Gradle.RegistrationTests.regWithoutPassword" />
-        <item itemvalue="Gradle.SplashCreenTest.splashScreenTime" />
-        <item itemvalue="Gradle.AddNewContactsTest.addNewContactNegative" />
+        <item itemvalue="Gradle.AddNewContactsTest.addNewContactPositive" />
+        <item itemvalue="Gradle.EditContactTests.editOrRemoveContact" />
+        <item itemvalue="Gradle.EditContactTests.addContactAndCheckTheList" />
+        <item itemvalue="Gradle.AddNewContactsTest.addMultipleContacts" />
+        <item itemvalue="Gradle.EditContactTests.addContactAndChechTheList" />
       </list>
     </recent_temporary>
   </component>

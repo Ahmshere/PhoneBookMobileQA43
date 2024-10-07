@@ -9,11 +9,17 @@ import screens.AddNewContactScreen;
 import screens.ContactListScreen;
 import screens.SplashScreen;
 
+import java.io.IOException;
+
 public class AddNewContactsTest extends AppiumConfig {
 
     @Test
-    public void addNewContactPositive() {
+    public void addNewContactPositive() throws IOException, InterruptedException {
+        swicthDataAndWiFi(false);
+        Thread.sleep(7000);
         Contact contact = ContactGenerator.createValidContact();
+
+
         new SplashScreen(driver).switchToAuthenticationScreen()
                 .fillEmailField("mymegamail@mail.com")
                 .fillPasswordField("MyPassword123!")
@@ -56,6 +62,15 @@ public class AddNewContactsTest extends AppiumConfig {
         contactListScreen.clickOnContact(contact.getName(), contact.getPhone());
         Thread.sleep(3000);
 
+    }
+
+    @Test
+    public void addMultipleContacts(){
+        new SplashScreen(driver).switchToAuthenticationScreen()
+                .fillEmailField("mymegamail@mail.com")
+                .fillPasswordField("MyPassword123!")
+                .clickLoginButtonUsingRegistrationResult();
+        new ContactListScreen(driver).addContacts(5);
     }
 
 
