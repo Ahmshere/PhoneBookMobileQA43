@@ -117,6 +117,7 @@ public class ContactListScreen extends BaseScreen {
     }
 
     public boolean isContactAddedWithScroll(Contact contact) {
+        waitForAnElement(addContactButton);
         boolean result = false;
         while (!result && !isThisTheEndOfTheList()) {
             boolean nameExistance = textContains(rowName, contact.getName());
@@ -138,7 +139,7 @@ public class ContactListScreen extends BaseScreen {
         }
         MobileElement contactElement = contacts.get(index);
         Rectangle rectangle = contactElement.getRect();
-        int startX = rectangle.getX() + rectangle.getWidth() / 8;
+        int startX = rectangle.getX() + rectangle.getWidth() / 4;
         int y = rectangle.getY() + rectangle.getHeight() / 2;
         int endX = startX + rectangle.getWidth() * 6 / 8;
         endX = Math.min(endX, rectangle.getX() + rectangle.getWidth() - 1);

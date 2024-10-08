@@ -43,11 +43,18 @@ public class AppiumConfig {
     }
 
     public void swicthDataAndWiFi(boolean value) throws IOException, InterruptedException {
-        String[]mobiledata = {"adb", "shell","svc", "data", value ? "enable":"disable"};
-        String[]wifidata = {"adb", "shell","svc", "wifi", value ? "enable":"disable"};
+        String[] mobileDataCommand = {"adb", "shell", "svc", "data", value ? "enable" : "disable"};
+        String[] wifiCommandSvc = {"adb", "shell", "svc", "wifi", value ? "enable" : "disable"};// Old versions
+        String[] wifiCommandCmd = {"adb", "shell", "cmd", "wifi", "set-wifi-enabled", value ? "enabled" : "disabled"};
+        String[] wifiCommandBroadcast = {"adb", "shell", "am", "broadcast", "-a", "io.appium.settings.wifi", "--es", "setstatus", value ? "enable" : "disable"};
+        String[] wifiCommandSettings = {"adb", "shell", "settings", "put", "global", "wifi_on", value ? "1" : "0"};
 
-        executeCommand(mobiledata);
-        executeCommand(wifidata);
+        // Выполнение всех команд (или только необходимых в зависимости от устройства)
+        executeCommand(mobileDataCommand);
+        executeCommand(wifiCommandSvc);
+        executeCommand(wifiCommandCmd);
+        executeCommand(wifiCommandBroadcast);
+        executeCommand(wifiCommandSettings);
 
     }
     //*************WiFi and DATA************

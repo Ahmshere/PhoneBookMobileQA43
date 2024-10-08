@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a1aa91f-5e50-4976-8724-9a43f4df11ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/enums/Directions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/CatFeeder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/CatFeedingException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screens/ViewContactScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/config/AppiumConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/AppiumConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/EditContactScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/EditContactScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AddNewContactsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddNewContactsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EditContactTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EditContactTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
