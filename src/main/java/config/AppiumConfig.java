@@ -49,7 +49,7 @@ public class AppiumConfig {
         String[] wifiCommandBroadcast = {"adb", "shell", "am", "broadcast", "-a", "io.appium.settings.wifi", "--es", "setstatus", value ? "enable" : "disable"};
         String[] wifiCommandSettings = {"adb", "shell", "settings", "put", "global", "wifi_on", value ? "1" : "0"};
 
-        // Выполнение всех команд (или только необходимых в зависимости от устройства)
+
         executeCommand(mobileDataCommand);
         executeCommand(wifiCommandSvc);
         executeCommand(wifiCommandCmd);

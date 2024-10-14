@@ -1,4 +1,5 @@
 import config.AppiumConfig;
+import config.InternetManager;
 import enums.ContactField;
 import enums.Directions;
 import helpers.ContactGenerator;
@@ -11,10 +12,13 @@ import screens.ContactListScreen;
 import screens.EditContactScreen;
 import screens.SplashScreen;
 
+import java.io.IOException;
+
 public class EditContactTests extends AppiumConfig implements TestHelper {
 
     @Test
     public void editContactTestPositive() {
+        InternetManager internetManager = new InternetManager();
         String modifiedFieldValue = "mynewmail@test.com";
         Contact contact = ContactGenerator.createValidContact();
         new SplashScreen(driver).switchToAuthenticationScreen()
@@ -47,7 +51,8 @@ public class EditContactTests extends AppiumConfig implements TestHelper {
     }
 
     @Test
-    public void editOrRemoveContact()  {
+    public void editOrRemoveContact() throws IOException, InterruptedException {
+        InternetManager internetManager = new InternetManager();
         Contact contact = ContactGenerator.createValidContact();
         new SplashScreen(driver).switchToAuthenticationScreen()
                 .fillEmailField(PropertiesReaderXML.getProperties("myuser", XML_DATA_FILE))
@@ -57,6 +62,8 @@ public class EditContactTests extends AppiumConfig implements TestHelper {
                 .openNewForm()
                 .fillNewContactForm(contact)
                 .createContact();
+        internetManager.cpuUsage();
+        internetManager.memoryMonitoring();
        contactListScreen.swipeAndActOnContact(contact, Directions.LEFT);
         //editContactScreen.editField(ContactField.EMAIL, "modifiedFieldV@mail.com");
 

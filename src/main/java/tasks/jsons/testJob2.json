@@ -1,0 +1,29 @@
+[
+  {
+    "jobId": 2,
+    "click": 107698151,
+    "country": "fr",
+    "date": "2024-05-11",
+    "money": 100.0
+  },
+  {
+    "jobId": 2,
+    "click": 107698152,
+    "country": "fr",
+    "date": "2024-05-11",
+    "money": 100.0
+  },
+  {
+    "jobId": 2,
+    "click": 107698153,
+    "country": "fr",
+    "date": "2024-05-11",
+    "money": 100.0
+  },
+  {
+    "jobId": 2,
+    "click": 107698154,
+    "country": "fr",
+    "date": "2024-05-11",
+    "money": 100.0
+  }]

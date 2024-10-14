@@ -5,9 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a1aa91f-5e50-4976-8724-9a43f4df11ea" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/config/InternetManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/BirdPoopException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/RainException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/WeddingPreparation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/ContactListModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/AuthenticationSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/Collections.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/DataFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/DataFileParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/DataProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/FileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/FolderReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/JsonReadTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/jsons/testJob1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/jsons/testJob2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/ApiUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/config/AppiumConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/AppiumConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screens/AddNewContactScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/AddNewContactScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AddNewContactsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddNewContactsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EditContactTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EditContactTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,21 +48,46 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PhoneBookMobileQA43" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PhoneBookMobileQA43" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PhoneBookMobileQA43" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2nJ33Vq9UnKWpkWJTfUFnm7pQlQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -51,6 +99,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
     "Gradle.AddNewContactsTest.addMultipleContacts.executor": "Run",
     "Gradle.AddNewContactsTest.addNewContactApproach2.executor": "Run",
     "Gradle.AddNewContactsTest.addNewContactNegative.executor": "Run",
@@ -65,20 +114,28 @@
     "Gradle.LoginTests.loginPositive.executor": "Run",
     "Gradle.LoginTests.loginnegative.executor": "Run",
     "Gradle.PhoneBookMobileQA43 [:CatFeeder.main()].executor": "Run",
+    "Gradle.PhoneBookMobileQA43 [:Collections.main()].executor": "Run",
     "Gradle.PhoneBookMobileQA43 [:ContactGenerator.main()].executor": "Run",
+    "Gradle.PhoneBookMobileQA43 [:FileUtils.main()].executor": "Run",
+    "Gradle.PhoneBookMobileQA43 [:FolderReader.main()].executor": "Run",
+    "Gradle.PhoneBookMobileQA43 [:WeddingPreparation.main()].executor": "Run",
     "Gradle.RegistrationTests.regWithoutPassword.executor": "Run",
     "Gradle.RegistrationTests.regWithoutPasswordUsingApplicationState.executor": "Run",
     "Gradle.RegistrationTests.registrationPositiveTest.executor": "Run",
     "Gradle.RegistrationTests.wrongEmailRegistration.executor": "Run",
     "Gradle.SplashCreenTest.firstLaunch.executor": "Run",
     "Gradle.SplashCreenTest.splashScreenTime.executor": "Run",
+    "JUnit.JsonReadTest.verifyContentIsAvailable.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.CatFeeder.testFeeding.executor": "Run",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/PROJECTS/PhoneBookMobileQA43/src/main/java",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0"
   }
@@ -93,102 +150,45 @@
       <recent name="models" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AddNewContactsTest.addNewContactPositive">
-    <configuration name="AddNewContactsTest.addMultipleContacts" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;AddNewContactsTest.addMultipleContacts&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
+  <component name="RunManager" selected="Application.FolderReader">
+    <configuration name="Collections" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tasks.Collections" />
+      <module name="PhoneBookMobileQA43.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="AddNewContactsTest.addNewContactPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;AddNewContactsTest.addNewContactPositive&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
+    <configuration name="FileUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tasks.FileUtils" />
+      <module name="PhoneBookMobileQA43.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="EditContactTests.addContactAndChechTheList" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;EditContactTests.addContactAndChechTheList&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="EditContactTests.addContactAndCheckTheList" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;EditContactTests.addContactAndCheckTheList&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
+    <configuration name="FolderReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tasks.FolderReader" />
+      <module name="PhoneBookMobileQA43.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="EditContactTests.editOrRemoveContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -214,13 +214,29 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="JsonReadTest.verifyContentIsAvailable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PhoneBookMobileQA43.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tasks" />
+      <option name="MAIN_CLASS_NAME" value="tasks.JsonReadTest" />
+      <option name="METHOD_NAME" value="verifyContentIsAvailable" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AddNewContactsTest.addNewContactPositive" />
+        <item itemvalue="Application.FolderReader" />
+        <item itemvalue="Application.FileUtils" />
+        <item itemvalue="JUnit.JsonReadTest.verifyContentIsAvailable" />
+        <item itemvalue="Application.Collections" />
         <item itemvalue="Gradle.EditContactTests.editOrRemoveContact" />
-        <item itemvalue="Gradle.EditContactTests.addContactAndCheckTheList" />
-        <item itemvalue="Gradle.AddNewContactsTest.addMultipleContacts" />
-        <item itemvalue="Gradle.EditContactTests.addContactAndChechTheList" />
       </list>
     </recent_temporary>
   </component>

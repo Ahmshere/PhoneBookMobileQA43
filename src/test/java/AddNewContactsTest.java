@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import screens.AddNewContactScreen;
 import screens.ContactListScreen;
 import screens.SplashScreen;
+import utils.ApiUtils;
 
 import java.io.IOException;
 
@@ -58,14 +59,17 @@ public class AddNewContactsTest extends AppiumConfig {
                 .openNewForm()
                 .fillNewContactForm(contact)
                 .clickByCreate();
-        ContactListScreen contactListScreen = result.getContactListScreen();
+
+        boolean res = ApiUtils.isContactExistsInApi(contact);
+        Assert.assertTrue(res, "The contact was not found in the contact list via API");
+       /* ContactListScreen contactListScreen = result.getContactListScreen();
         contactListScreen.clickOnContact(contact.getName(), contact.getPhone());
-        Thread.sleep(3000);
+        Thread.sleep(3000);*/
 
     }
 
     @Test
-    public void addMultipleContacts(){
+    public void addMultipleContacts() {
         new SplashScreen(driver).switchToAuthenticationScreen()
                 .fillEmailField("mymegamail@mail.com")
                 .fillPasswordField("MyPassword123!")

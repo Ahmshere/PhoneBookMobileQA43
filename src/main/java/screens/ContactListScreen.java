@@ -8,6 +8,8 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
 import models.Contact;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.support.FindBy;
 
@@ -183,9 +185,7 @@ public class ContactListScreen extends BaseScreen {
             throw new IllegalStateException("Wrong size...");
         }
         for (int i = 0; i < rowName.size(); i++) {
-            if (i >= rowPhone.size()) {
-                break;
-            }
+
             if (rowName.get(i).getText().contains(contact.getName()) &&
                     rowPhone.get(i).getText().contains(contact.getPhone())) {
                 return i;

@@ -2,6 +2,7 @@ package screens;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidElement;
 import models.Contact;
 import models.RegistrationResult;
 import org.openqa.selenium.By;
@@ -15,7 +16,7 @@ public class AddNewContactScreen extends BaseScreen {
     }
 
     @FindBy(id = "com.sheygam.contactapp:id/inputName")
-    MobileElement inputNameField;
+    AndroidElement inputNameField;
     @FindBy(id = "com.sheygam.contactapp:id/inputLastName")
     MobileElement inputLastNameField;
     @FindBy(id = "com.sheygam.contactapp:id/inputEmail")
